@@ -1,0 +1,20 @@
+#Docstrings in Python
+
+def greet (name):
+
+  """
+ Fuction to greet a person by name.
+ 
+ Args:
+     name(str): Then name of the person to 
+     
+     
+ Returns:
+     str: A greeting message.
+             
+  """
+    
+  return f"Hello, {name}!"
+
+print(greet.__doc__)
+

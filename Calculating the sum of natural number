@@ -1,0 +1,13 @@
+def sum_of_natural_numbers(a):
+  
+    if a <= 0:
+        return 0
+    else:
+        return a + sum_of_natural_numbers(a - 1)
+
+
+a = int(input("Enter a postive integer: "))
+
+
+result = sum_of_natural_numbers(a)
+print(f"The sum of the first {a} natural numbers is {result}")

@@ -1,0 +1,63 @@
+#Symmetric difference
+names1 = {"Suroj", "Aman", "Rabin", "OM"}
+names2 = {"Hriyaz", "Enjan", "Rabin", "Aman","Suroj"}
+names3 = names1.symmetric_difference(names2)
+print(names3)   
+
+
+#difference and difference_update
+names1 = {"Suroj", "Aman", "Rabin", "OM"}
+names2 = {"Hriyaz", "Enjan", "Rabin", "Aman","Suroj"}
+names4 = names2.difference(names1)
+print(names4)   
+
+
+#isdisjoint- checks if the given sets are disjoint or not
+names1 = {"Suro1j", "Aman3", "Rabin2", "OM"}
+names2 = {"Hriyaz", "Enjan", "Rabin", "Aman","Suroj"}
+names5 = names1.isdisjoint(names2)
+print(names5)   
+
+
+#superset - checks if all the items of a particular sets belong in original set
+names1 = {"Suroj", "Aman", "Rabin", "OM"}
+names2 = {"OM" , "Rabin"}
+names6 = names1.issuperset(names2)
+print(names6)   
+
+
+#subset - checks if all the items of a original sets belong in particular set
+names1 = {"Suroj", "Aman", "Rabin", "OM","Manish","Saroj","Enjan","Hriyaz"}
+names2 = {"Hriyaz", "Enjan", "Rabin", "Aman","Suroj"}
+names7 = names2.issubset(names1)
+print(names7)   
+
+
+#ADD
+colors = {"RED","PINK","BLACK","YELLOW","GREAY","PURPLE"}
+colors.add("CYAN")
+print(colors)
+
+
+#dicard or remove - rempve items from sets
+names = {"Suroj", "Aman", "Rabin", "OM","Ram","Hari","Bikash"}
+names.remove("Suroj")
+names.remove("Bikash")
+print(names)   
+
+
+#pop- pop out the random items from the set
+namess = {"Suroj", "Aman", "Rabin", "OM", "Ram", "Hari", "Bikash"}
+hero = namess.pop()
+print(namess)
+print(hero)
+
+
+#del - delete the entire sets
+names1 = {"Suro1j", "Aman3", "Rabin2", "OM"}
+names4 = {"Hriyaz", "Enjan","Jetha" "Rabin", "Aman","Suroj"}
+del names1
+del names3
+print(names1)
+print(names4)
+

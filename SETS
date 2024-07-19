@@ -10,7 +10,7 @@ for item in set:     #To access the items in set using for loop
 
 
 
-#To update find union,intersection
+#To update, find union,intersection of given sets
 
 '''set1 = {3,5,6,7,8,9,2,3,4,5}
 set2 = {3,4,6,9,7,5,1,4,5,6,10}

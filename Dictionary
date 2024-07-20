@@ -1,0 +1,28 @@
+#Python Dictionaries
+dict = {
+"Valorant" : "FPS Game",
+"Riot" : "Gaming Company",
+}
+print(dict["Riot"])
+      
+#WITH INTEGERS
+dic = {
+99 : "AMAN",
+4666 :"REYNA",
+669: "CYPHER",
+4487: "SAGE",
+}
+print(dic[669])
+
+#Accessing single value from dic
+data = {"name": "Samir","age":25,"height":6.11,"gym":"NO"} #this code wil generate error if the key is not in the dictionaries
+print(data['age'])
+print(data.get('age2')) #this code will print none even theres no key value of it
+
+#Accessing multiple values and keys
+data1 = {"name": "Samir","age":25,"height":6.11,"gym":"NO"} 
+print(data1.keys())
+print(data1.values())
+
+for key in data1.keys():
+  print(f"The value of the corresponding to given key {key} is {data1[key]}")

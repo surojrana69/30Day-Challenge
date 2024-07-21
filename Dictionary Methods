@@ -1,0 +1,34 @@
+ #DICTIONARIES METHODS
+
+#Update - update the items from one dictionary to another
+
+Studentsid = {"Kartik":44.5,"Bikash": 59.5,"Aadarsha":66.6, "Hari":88.8}
+Studentsid1 =  {"Virat":74.5,"Rohit": 69.5}
+Studentsid.update(Studentsid1)
+print(Studentsid)
+
+# #Clear - remove all the items from the dictionary
+
+Studentsid = {"Kartik":44.5,"Bikash": 59.5,"Aadarsha":66.6, "Hari":88.8}
+Studentsid.clear()
+print(Studentsid)
+
+#Pop- remove the selected item from the list
+
+Studentsid = {"Kartik":44.5,"Bikash": 59.5,"Aadarsha":66.6, "Hari":88.8}
+Studentsid.pop("Aadarsha")
+print(Studentsid)
+
+#popitems - remove the last key's items from the list
+
+Studentsid = {"Kartik":44.5,"Bikash": 59.5,"Aadarsha":66.6, "Hari":88.8}
+Studentsid.popitem()
+print(Studentsid)
+
+
+#del
+
+Studentsid = {"Kartik":44.5,"Bikash": 59.5,"Aadarsha":66.6, "Hari":88.8}
+del Studentsid["Kartik"]  #this code will only delete one item
+#del Studentsid -         -This code will remove or delete the entire dictionary
+print(Studentsid)

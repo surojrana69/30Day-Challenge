@@ -1,0 +1,30 @@
+# #FOR LOOP WITH IF
+
+for a in []:
+  print(a)
+
+else:
+  print("There's no 'a' in the list")
+
+# #Example
+for number in range(5):
+    print(number)
+else:
+    print("Loop finished without breaking")
+
+
+#Example
+
+for b in range(9):
+  print(b)
+  if b== 4:
+    break
+else:
+ print("Sorry theres's no b")
+
+#Example
+for x in range(5):
+  print ("iteration no {} in for loop".format(x+1))
+else:
+  print ("else block in loop")
+print ("Out of loop")

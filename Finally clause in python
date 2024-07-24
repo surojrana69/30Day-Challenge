@@ -1,0 +1,26 @@
+#FINALLY CLAUSE
+
+try:
+  a = [4,3,8,9,7]
+  b=int(input("Enter the index number:"))
+  print(a[b])
+
+except:
+      print("Errors Occurred")
+finally:
+  print("This line will always be executed")
+
+
+#Example
+  
+try:
+
+    numerator = int(input("Enter the numerator:"))
+    denominator = int(input("Enter the denominator:"))
+    result = numerator / denominator
+    print(f"The result is: {result}")
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+finally:
+    print("Division operation completed.")
+ 

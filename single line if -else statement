@@ -1,0 +1,33 @@
+# # #IF ELSE IN ONE LINE
+
+a = 10000
+b = 1500
+
+# #Using short if-else statement
+print("A") if a > b else print("B") 
+
+# #Using Full if-else statement
+if a > b:
+  print("A")
+
+elif a < b:
+  print("B")
+
+
+#Example
+
+number = 10
+result = "Even" if number % 2 == 0 else "Odd"
+print(result)
+
+#Example-1
+
+score = int(input("Enter your number:"))
+grade = (
+    "A" if score >= 90 else
+    "B" if score >= 80 else
+    "C" if score >= 70 else
+    "D" if score >= 60 else
+    "F"
+)
+print(f"The grade is: {grade}")

@@ -1,0 +1,29 @@
+#ENUMERATE FUNCTION
+ 
+names = ["AMAN", "SUROJ","DIPESH","PANDAY","RABIN"]
+
+#WAY 1
+
+index = 1
+for name in names:
+    print(name)
+    if index == 2:
+        print("GREAT JOB!")
+    index += 1
+
+#Way-2(Using enumerate function)
+
+for index, name in enumerate(names, start=1):
+    print(name)
+    if index == 2:
+        print("GREAT JOB!")
+
+
+#Example
+
+fruits = ["Apple", "Banana", "Cherry", "Date"]
+
+for index, fruit in enumerate(fruits, start=1):
+    print(f"{index}: {fruit}")
+    if index == 2:
+        print("BRAVO!")

@@ -1,0 +1,19 @@
+#IMPORTING IN PYTHON
+import math  #Importing math module
+
+result = math.sqrt(49)
+print(result)  
+
+from math import sqrt #Only importing sqrt function from math
+result1 = sqrt(49)
+print(result1)
+
+from math import sqrt as squrerootof #renaminig the sqrt as 
+                                     #squrerootof
+result2 = squrerootof(49)
+print(result2)
+
+#DIR fucntion
+import math
+print(dir(math))   #This will output a list of all the names 
+                     #defined in the math modul like sqrt.

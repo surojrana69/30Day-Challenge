@@ -1,0 +1,23 @@
+#OS MODULE
+
+import os
+
+if(not os.path.exists("Suroj")):
+ os.mkdir("Suroj")
+
+for a in range(0,14):
+    os.rename(f"Suroj/Workout_Day{a+1}", f"Suroj/Workout_Day{a+1} ")   #Renaming the folder
+
+
+
+####Another File to access the above folder
+
+import os
+folders = os.listdir("Suroj")  #displaying the number of folders
+
+print(folders)
+
+for folder in folders:
+    print(folder)
+    print(os.listdir(f"Suroj/{folder}")) #Accessing the file from the folder
+

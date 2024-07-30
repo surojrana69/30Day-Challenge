@@ -1,0 +1,16 @@
+#GLOBAL and LOCAL VARIABLE
+
+a = 10  # global variable
+
+print(a)
+
+
+def s_function():
+  global a
+  a = 5  # this will change the value of the global variable x
+  b = 5  # local variable
+
+
+s_function()
+print(a)  # prints 5 not 10 since it inside the function
+print(b) # this will cause an error because b is a local variable and is not accessible outside of the function

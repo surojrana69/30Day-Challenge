@@ -1,0 +1,20 @@
+#FILE HANDLING
+
+#Reading a File
+a = open('my.txt','') #r = read
+print(a)
+text = a.read()
+print(text)
+a.close()
+
+
+#Writing a File
+
+a = open('my.txt','a')  
+a .write("Hello Suroj")
+a.close()
+
+#with statement- it will automatically close the file
+
+with open('my.txt','a') as f:
+    a.write("Hey How are you doing?")

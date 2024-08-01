@@ -1,0 +1,42 @@
+import sys
+import time
+
+questions = [
+    ["What is the capital of Nepal?", "Kathmandu", "Pokhara", "Lalitpur", "Bhaktapur", "None", 1],
+    ["Which is the highest mountain in Nepal?", "K2", "Kangchenjunga", "Lhotse", "Mount Everest", "None", 4],
+    ["What is the national animal of Nepal?", "Tiger", "Rhino", "Cow", "Elephant", "None", 3],
+    ["Which is the longest river in Nepal?", "Bagmati", "Gandaki", "Koshi", "Karnali", "None", 4],
+    ["Who is the founder of Buddhism born in Nepal?", "Confucius", "Laozi", "Buddha", "Mahavira", "None", 3],
+    ["What is the official language of Nepal?", "Hindi", "Nepali", "Maithili", "Bhojpuri", "None", 2],
+    ["Which festival is known as the 'Festival of Lights' in Nepal?", "Holi", "Dashain", "Tihar", "Losar", "None", 3],
+    ["What is the traditional attire of Nepali women?", "Sari", "Kimono", "Hanbok", "Kurta Suruwal", "None", 1],
+    ["Which city is known as the 'City of Lakes' in Nepal?", "Kathmandu", "Pokhara", "Chitwan", "Biratnagar", "None", 2],
+    ["What is the currency of Nepal?", "Rupee", "Dollar", "Yen", "Euro", "None", 1]
+]
+
+
+levels = [1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000]
+money = 0
+for i in range(0, len(questions)):
+  
+  question = questions[i]
+  print(f"\n\nQuestion for Rs. {levels[i]}")
+  print(f"a. {question[1]}          b. {question[2]} ")
+  print(f"c. {question[3]}          d. {question[4]} ")
+  reply = int(input("Enter your answer (1-4) or  0 to quit:\n" ))
+  if (reply == 0):
+    money = levels[i-1]
+    break
+  if(reply == question[-1]):
+    print(f"Correct answer, you have won Rs.{levels[i]}")
+    if(i == 4):
+      money = 10000
+    elif(i == 9):
+      money = 320000
+    elif(i == 14):
+      money = 10000000
+  else:
+    print("Wrong answer!")
+    break 
+
+print(f"Your take home money is {money}")

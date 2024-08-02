@@ -1,0 +1,38 @@
+import random
+options = ("rock", "paper","scissors")
+looping = True
+
+while looping:
+
+  player = None
+  computer = random.choice(options)
+
+  while player not in options:
+    player = input(str("Enter a your choice (rock, paper, scissors):"))
+
+
+  print(f"player: {player}")
+  print(f"computer: {computer}")
+
+  if player == computer:
+   print("IT's Draw!")
+  elif player == "rock" and computer == "scissors":
+   print("You've Won")
+  elif player =="rock" and computer == "paper":
+   print("You've lose to computer")
+  elif player =="paper" and computer == "scissors":
+   print("You've lose to computer")
+  elif player =="paper" and computer == "rock":
+   print("You've Won")
+  elif player =="scissors" and computer == "paper":
+   print("You've Won")
+  elif player =="scissors" and computer == "rock":
+   print("You've lose to computer")
+  else:
+   print("You've lose to computer") 
+
+  play_again = input("Would you like to play again? (Yes/No): ").lower()
+  if play_again != "yes":
+    break
+
+print("Thank you for playing")
